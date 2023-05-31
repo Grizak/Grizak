@@ -1,0 +1,2 @@
+- 👋 Hi, I’m @Grizak
+- 👀 I’m interested in coding, mods and minecraft
