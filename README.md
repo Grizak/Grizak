@@ -17,7 +17,7 @@
   [Website](grizak.github.io/Bingo/)
 
 
-  #### Buisness
-    [Github repo](https://github.com/DJLarliboyljudochljus/Mainwebsite)
+#### Buisness
+  [Github repo](https://github.com/DJLarliboyljudochljus/Mainwebsite)
 
-    [Website](djlarkiboyljudochljus.github.io/mainwebsite/)
+  [Website](djlarkiboyljudochljus.github.io/mainwebsite/)
