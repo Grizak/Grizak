@@ -60,35 +60,43 @@
   </style>
 </head>
 <body>
-  <div class="calculator">
-    <input type="text" class="display" id="display" disabled>
-    <div class="buttons">
-      <button class="button" onclick="appendValue('7')">7</button>
-      <button class="button" onclick="appendValue('8')">8</button>
-      <button class="button" onclick="appendValue('9')">9</button>
-      <button class="button function" onclick="appendValue('/')">÷</button>
+  <div class="buttons">
+  <!-- Basic Operations -->
+  <button class="button" onclick="appendValue('7')">7</button>
+  <button class="button" onclick="appendValue('8')">8</button>
+  <button class="button" onclick="appendValue('9')">9</button>
+  <button class="button function" onclick="appendValue('/')">÷</button>
 
-      <button class="button" onclick="appendValue('4')">4</button>
-      <button class="button" onclick="appendValue('5')">5</button>
-      <button class="button" onclick="appendValue('6')">6</button>
-      <button class="button function" onclick="appendValue('*')">×</button>
+  <button class="button" onclick="appendValue('4')">4</button>
+  <button class="button" onclick="appendValue('5')">5</button>
+  <button class="button" onclick="appendValue('6')">6</button>
+  <button class="button function" onclick="appendValue('*')">×</button>
 
-      <button class="button" onclick="appendValue('1')">1</button>
-      <button class="button" onclick="appendValue('2')">2</button>
-      <button class="button" onclick="appendValue('3')">3</button>
-      <button class="button function" onclick="appendValue('-')">−</button>
+  <button class="button" onclick="appendValue('1')">1</button>
+  <button class="button" onclick="appendValue('2')">2</button>
+  <button class="button" onclick="appendValue('3')">3</button>
+  <button class="button function" onclick="appendValue('-')">−</button>
 
-      <button class="button" onclick="appendValue('0')">0</button>
-      <button class="button" onclick="appendValue('.')">.</button>
-      <button class="button equals" onclick="calculate()">=</button>
-      <button class="button function" onclick="appendValue('+')">+</button>
+  <button class="button" onclick="appendValue('0')">0</button>
+  <button class="button" onclick="appendValue('.')">.</button>
+  <button class="button equals" onclick="calculate()">=</button>
+  <button class="button function" onclick="appendValue('+')">+</button>
 
-      <button class="button" onclick="clearDisplay()">C</button>
-      <button class="button" onclick="calculatePercent()">%</button>
-      <button class="button" onclick="calculateSquareRoot()">√</button>
-      <button class="button function" onclick="deleteLast()">DEL</button>
-    </div>
-  </div>
+  <!-- Extended Operations -->
+  <button class="button" onclick="clearDisplay()">C</button>
+  <button class="button" onclick="calculatePercent()">%</button>
+  <button class="button" onclick="calculateSquareRoot()">√</button>
+  <button class="button function" onclick="deleteLast()">DEL</button>
+
+  <button class="button" onclick="calculateSquare()">x²</button>
+  <button class="button" onclick="calculateCube()">x³</button>
+  <button class="button" onclick="calculateFactorial()">n!</button>
+  <button class="button" onclick="calculateExponent()">xʸ</button>
+
+  <button class="button" onclick="calculateLog()">log</button>
+  <button class="button" onclick="calculateLn()">ln</button>
+</div>
+
 
   <script>
     const display = document.getElementById('display');
