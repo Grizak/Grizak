@@ -52,8 +52,19 @@
         // Add flashing lights animation
         document.body.style.animation = "flash 0.5s infinite alternate";
 
+        const apiURL = "https://pixabay.com/api/?key=47622380-6ae4b5b7443d2a0dc89e661bc";
+
+        fetch(apiURL)
+          .then(response = response.json())
+          .then(data) {
+            const url = data.hits[1].largeImageURL;
+          }
+          .catch (err) {
+            console.error("Error fetching data", err);
+          }
+
         // Play a DJ sound
-        const audio = new Audio("https://www.youtube.com/watch?v=hlr0dKBU-Gs");
+        const audio = new Audio(url);
         audio.play();
 
         // Stop party mode after 5 seconds
