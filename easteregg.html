@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJ Larkiboy Easter Egg</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #111;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #ff9800;
+    }
+
+    @keyframes flash {
+      0% { background-color: black; }
+      100% { background-color: white; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to DJ Larkiboy Ljud och Ljus</h1>
+  <p>Type "PARTY" to see the magic happen!</p>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      let secretCode = "PARTY";
+      let typedCode = "";
+
+      // Listen for key presses
+      document.addEventListener("keyup", (e) => {
+        typedCode += e.key.toUpperCase();
+
+        // Keep only the last few characters
+        if (typedCode.length > secretCode.length) {
+          typedCode = typedCode.slice(-secretCode.length);
+        }
+
+        // Check if the code matches
+        if (typedCode === secretCode) {
+          triggerPartyMode();
+        }
+      });
+
+      function triggerPartyMode() {
+        // Add flashing lights animation
+        document.body.style.animation = "flash 0.5s infinite alternate";
+
+        // Play a DJ sound
+        const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
+        audio.play();
+
+        // Stop party mode after 5 seconds
+        setTimeout(() => {
+          document.body.style.animation = "";
+        }, 5000);
+      }
+    });
+  </script>
+</body>
+</html>
