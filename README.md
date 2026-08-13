@@ -2,6 +2,7 @@
 
 Welcome to my GitHub profile!  
 Here you’ll find my latest work, open source contributions, and a showcase of my journey as a developer.
+Check out my [youtube channel](https://youtube.com/@grizakbuilds)
 
 ---
 
