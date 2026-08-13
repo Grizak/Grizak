@@ -1,9 +1,7 @@
 # 👋 Hi there, I'm Grizak!
 
 Welcome to my GitHub profile!  
-
 Here you’ll find my latest work, open source contributions, and a showcase of my journey as a developer.
-
 Check out my [youtube channel](https://youtube.com/@grizakbuilds)
 
 ---
@@ -24,15 +22,15 @@ Replace these with your top repositories!
 Short description about the project, tech stack, or your role.
 -->
 
-- [Auth website](https://github.com/Grizak/isaksweb-auth)
-    _In development at the moment, comming soon._
+- [Wick](https://github.com/Grizak/wick)
+    _In accordance with my [youtube series](https://www.youtube.com/playlist?list=PLRaVNasWvQcM), written in GO_
 
 ---
 
 ## 🛠️ Skills & Tools
 
 <!-- List your best programming languages, frameworks, or tools -->
-- Languages: `JavaScript`, `TypeScript`
+- Languages: `JavaScript`, `TypeScript`, `Go`
 - Frameworks: `React`, `Node.js`
 - Tools: `Git`, `Docker`, `VSCode`, `MongoDB`
 
